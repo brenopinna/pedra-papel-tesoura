@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font: 20px Arial, Helvetica, sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5px;
+    border-bottom: 1px solid black;
+}
+
+header span{
+    font-size: 1.3rem;
+}
+
+#situacao{
+    width: 120px;
+}
+
+#game-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 900px;
+    margin: 10px auto;
+    padding: 0 10px;
+}
+
+.jogador{
+    width: 130px;
+    text-align: center;
+}
+
+.jogador img{
+    width: 100%;
+    opacity: 0.3;
+}
+
+#player img{
+    cursor: pointer;
+}
+
+#player img:hover{
+    opacity: 0.5;
+}
+
+.visivel{
+    opacity: 1 !important;
+}
+
+#enemy img{
+    cursor: not-allowed;
+}
+
+@media screen and (max-width: 768px) {
+    header{
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    
+    header h1{
+        font-size: 1.8rem;
+        order: -1;
+    }
+}
